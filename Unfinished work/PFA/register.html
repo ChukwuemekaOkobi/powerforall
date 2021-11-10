@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Kodinger">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Register - Power For All</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/my-login.css">
+</head>
+<body class="my-login-page">
+	<section class="h-100">
+		<div class="container h-100">
+			<div class="row justify-content-md-center h-100">
+				<div class="card-wrapper-register">
+					<div class="">
+						<br><br><br>
+					</div>
+					<div class="card fat">
+						<div class="card-body">
+							<h4 class="card-title leftspace">Register</h4>
+							<form method="POST" class="my-login-validation" novalidate="">
+								<table class="table">
+									<tr>
+										<td>
+											<div class="form-group">
+												<label for="name">First name</label>
+												<input id="fname" type="text" class="form-control" name="fname" required>	
+											</div>
+
+										</td>
+										<td>
+											<div class="form-group">
+												<label for="name">Last name</label>
+												<input id="lname" type="text" class="form-control" name="lname" required>
+												
+											</div>
+
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form-group">
+												<label for="email">E-Mail Address</label>
+												<input id="email" type="email" class="form-control" name="email" placeholder="email@domain.com" required>
+												<div class="invalid-feedback">
+													Your email is invalid
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<label >Phone</label>
+												<input type="number" class="form-control"  required>
+												
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form-group">
+												<label for="password">Password</label>
+												<input id="password" type="password" class="form-control" name="password">
+												<div class="invalid-feedback">
+													Password is required
+												</div>
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<label for="password">Confirm Password</label>
+												<input id="password" type="password" class="form-control" name="password" >
+												<!-- <required data-eye></required> -->
+												<div class="invalid-feedback">
+													The confirmation is required
+												</div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form-group">
+												<label >State</label>
+												<select class="form-control" name="state">
+													<option>Select State</option>
+													<option>Alabama</option>
+													<option>Alaska</option>
+													<option>Arizona</option>
+													<option>Arkansas</option>
+												  </select>
+												
+											</div>
+										</td>
+										
+										<td>
+											<div class="form-group">
+												<label >City</label>
+												<input  class="form-control"  required>
+												
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form-group">
+												<label >Country</label>
+												<select class="form-control" name="sponsorship">
+													<option>Select country</option>
+													<option>Kenya</option>
+													<option>Uganda</option>
+												  </select>
+												
+											</div>
+										</td>
+										<td>
+											<div class="form-group">
+												<label >Postal code</label>
+												<input  class="form-control"  required>
+												
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="form-group">
+												<label >Organization</label>
+												<input  class="form-control"  required>
+												
+											</div>
+										</td>
+										<td>
+
+										</td>
+									</tr>
+								</table>
+								
+								<div class="">
+									<button type="submit" class="btn-register ">
+										Register
+									</button>
+								</div>
+								<div class="mt-4 text-center">
+									Already have an account? <a href="login.html" class="links">Login</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+</body>
+
+</html>
