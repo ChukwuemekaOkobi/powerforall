@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highmaps.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/modules/stock.js"></script>
+    <script src="/js/modules/map.js"></script>
     
     <title>PEAK</title>
 </head>
@@ -126,101 +133,42 @@
         <div id="wrapper" class="peak-area peak-bg-height gray-bg pt-25 pb-70">
 
             <div class="container">
-                <h1>Search datasets </h1>
+                <h1>Data visualization</h1>
                 <div class="row white-bg">
+                
 
-                    <div class="col-md-9">
-                        <div class="head">
-                            <div class="form-group has-search pt-3 pb-3">
-                                <span class="fa fa-search form-control-feedback"></span>
-                                <input type="text" class="form-control" placeholder="Search">
-                            </div>
-                          
+                    <div id="chart-container" class="col-md-9 research-results" style="height:900px">
+                    
+
+                        
+                        
+                    </div>
+                    <div class="col-md-3" style="background-color:#dddee0; border-left:1px solid grey;">
+                                <div >
+                    <h4 class="primary-color"><br>Filter By</h4>
+                                    
+                                        
+                    <ul class="navbar-nav sidebar sidebar-dark " id="accordionSidebar">
+
+                
+
+                    <!-- Nav Item - Pages Collapse Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true" aria-controls="collapseTwo">
+                            <i class="fas fa-flag icon-cog blackiconcolor" style="color:grey"></i>
+                            <span style="color:black">Countries</span>
+                        </a>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
                             
-                            <a href=""><i class="fa fa-comments-o"></i> Clear filters</a>
-                            <hr class="search"/>
-                        </div>
-                        <div class="research-results">
-
-                      
-                          <div class="card research mb-30" >
-                            <h4 class="card-title research">Energy Access and Gender in Ghana: Policy Brief    <span class="research-result-date float-right"> Rwanda</span></h4>
-                              <p align="justify">Energy Access and Gender in Ghana: Policy Brief Energy Access and Gender in Ghana: Policy Brief INTRODUCTION In the wider West African region, Ghana Policy Brief INTRODUCTION In the wider West African region, Ghana Policy Brief INTRODUCTION In the wider West African region, Ghana is often seen as an energy success st.</p>
-                              <hr>
-                        </div>
-
-                        <div class="card research mb-30" >
-                            <h4 class="card-title research">Energy Access and Gender in Ghana: Policy Brief    <span class="research-result-date float-right"> Nigeria</span></h4>
-                             <p align="justify">Energy Access and Gender in Ghana: Policy Brief Energy Access and Gender in Ghana: Policy Brief INTRODUCTION In the wider West African region, Ghana Policy Brief INTRODUCTION In the wider West African region, Ghana Policy Brief INTRODUCTION In the wider West African region, Ghana is often seen as an energy success st.</p>
-                                
-                            <hr>
-                        </div>
-
-                        <div class="card research mb-30s" >
-                            <h4 class="card-title research">Energy Access and Gender in Ghana: Policy Brief    <span class="research-result-date float-right"> Uganda</span></h4>
-                               <p align="justify">Energy Access and Gender in Ghana: Policy Brief Energy Access and Gender in Ghana: Policy Brief INTRODUCTION In the wider West African region, Ghana Policy Brief INTRODUCTION In the wider West African region, Ghana Policy Brief INTRODUCTION In the wider West African region, Ghana is often seen as an energy success st.</p>
-                              
-                              <hr>
-                        </div>
-
-                        <hr class="search"/>
-
-                          <div class="row mt-15">
-                            <div class="col-xl-12 text-center">
-                                <div class="single-events-btn mt-15 mb-30">
-                                    <nav class=" mb-30" aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-center">
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><span class="ti-angle-left"></span></a>
-                                            </li>
-                                            <li class="page-item active">
-                                                <a class="page-link" style="" href="#">1</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">2</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">3</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#">4</a>
-                                            </li>
-                                            <li class="page-item">
-                                                <a class="page-link" href="#"><span class="ti-angle-right"></span></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
+                                <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Rwanda</a>
+                                <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Uganda</a>
+                                <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Nigeria</a>
+                                <a class="collapse-item" href="#"> All countries</a>
                             </div>
                         </div>
-                        </div>
-                    </div>
-            <div class="col-md-3" style="background-color:#dddee0; border-left:1px solid grey;">
-                        <div >
-            <h4 class="primary-color"><br>Filter By</h4>
-                            
-                                
-            <ul class="navbar-nav sidebar sidebar-dark " id="accordionSidebar">
-
-          
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-flag icon-cog blackiconcolor" style="color:grey"></i>
-                    <span style="color:black">Countries</span>
-                </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
-                     
-                        <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Rwanda</a>
-                        <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Uganda</a>
-                        <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Nigeria</a>
-                        <a class="collapse-item" href="#">All countries</a>
-                    </div>
-                </div>
-            </li>
+                    </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <li class="nav-item">
@@ -236,7 +184,7 @@
                         <a class="collapse-item" href="#"><input type="checkbox"> &nbsp World bank data</a>
                         <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Statistica</a>
                         <a class="collapse-item" href="#"><input type="checkbox"> &nbsp WDD</a>
-                        <a class="collapse-item" href="#">All datasets</a>
+                        <a class="collapse-item" href="#"> All datasets</a>
                     </div>
                 </div>
             </li>
@@ -353,20 +301,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="footer-bottom pt-25 pb-25">
-                            <div class="container">
-                             
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </footer>
             <!-- footer end -->
         
         
-            <!-- JS here -->
+         
             
-                <!-- Bootstrap core JavaScript-->
+              
             <script src="vendor/jquery/jquery.min.js"></script>
             <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
@@ -374,6 +318,45 @@
                     
         </body>
         
-        
+          <!-- High charts scripts-->
+        <script> 
+
+                        document.addEventListener('DOMContentLoaded', function () {
+                        
+                        const chart = Highcharts.chart('chart-container', {
+                             chart: {
+                                         height: (9 / 16 * 100) + '%' // 16:9 ratio
+                                    },
+
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: '<b>Power consumption (Nigeria, Rwanda vs Uganda)</b>'
+                        },
+                        xAxis: {
+                            categories: ['2011', '2012', '2013']
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Power in kilowatts'
+                            }
+                        },
+                        series: [{
+                            name: 'Nigeria',
+                            data: [1, 20, 4]
+                        }, {
+                            name: 'Rwanda',
+                            data: [5, 7, 3]
+                        },
+                        {
+                            name: 'Uganda',
+                            data: [3, 9, 12]
+                        }]
+                        });
+                        });
+
+                </script>
+                
         </html>
         
