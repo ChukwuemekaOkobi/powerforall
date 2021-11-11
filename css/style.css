@@ -1568,9 +1568,12 @@ li > .donate {
     font-size: 13px;
     font-weight: bold;
     color: black;
+    display: table-cell;
+    vertical-align: middle;
 }
 .card.research{
     border: 0;
+    background: none;
 }
 
 .card.research .badge-pill{
@@ -1581,6 +1584,7 @@ li > .donate {
 .card-title.research{
     color: var(--primary-bg);
     font-weight: bold;
+    display: table;
 }
 .card-title .fa-star{
     font-size: 14px;
@@ -1626,6 +1630,18 @@ a.page-link{
     font-family: 'Roboto', sans-serif;
 }
 
+.nav.nav-pills .nav-link{
+    background-color:#1a263b; 
+    border-radius: 0;
+    color:white
+}
+
+.nav.nav-pills a {
+    color:white;
+}
+.nav.nav-pills .nav-link.active{
+    background-color:  #4288b3;
+}
 .results {
     font-size: 12px;
     font-weight: bold;
@@ -1638,6 +1654,12 @@ a.page-link{
     line-height: 1;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+}
+.filter {
+    /*background-color: #eceef0;*/
+    background-color: #f5f5f5;
+    border-left: 1px solid #c6c6c6 !important;
+    border-radius: 3px;
 }
 
 .research-details-overview-top p {
@@ -3514,3 +3536,9 @@ span.opening-date {
     font-size: 15px;
     color: #949494;
 }
+
+@media (min-width: 300px){
+.card-title.research {
+    font-size: 18px;
+}
+    }
