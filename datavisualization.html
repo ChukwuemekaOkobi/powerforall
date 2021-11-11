@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
@@ -22,12 +22,7 @@
 </head>
 
 <body id="page-top">
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
-    <!-- Add your site or application content here -->
-     <!-- header-start -->
+  
      <header id="home" class="white-bg">
         <div class="header-area header-sticky">
             <!-- header-bottom -->
@@ -135,9 +130,44 @@
             <div class="container">
                 <h1>Data visualization</h1>
                 <div class="row white-bg">
+                    <div style="width:100%; background-color: gray">
+                            <!-- Search div starts here -->
+                        <div class="head">
+                            <div class="form-group has-search pt-3 pb-3" style="padding-left:10%;padding-right:30%">
+                                <span class="fa fa-search form-control-feedback"></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                          
+                        </div>
+                         <div class="clearfix mb-2">
+                                    <div class="float-left" style="padding-left:10%;" >
+                                            <ul class="nav nav-pills">
+                                                <button role="presentation" class="nav-link active">Save chart</button>
+                                                <button role="presentation" class="nav-link ">Clear chart</button>
+                                              
+                                            </ul>
+                                    
+                                    </div>
+                                    <div class="float-right" style="padding-right:30%">
+                                        <label class="sort-by mr-1" style="color:white">Chart type</label>
+                                        <select id="select_sort" class=" research-sort" onchange="handleSelectSort()">
+                                        <option value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;operator=OR&amp;synonyms=1&amp;q=energy">Bar</option>
+                                        <option selected="" value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;sort=newest&amp;operator=OR&amp;synonyms=1&amp;q=energy">Line</option>
+                                        <option value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;sort=oldest&amp;operator=OR&amp;synonyms=1&amp;q=energy">Column</option>
+                                        </select>
+                                   
+                                        <label class="sort-by mr-1" style="color:white; ">Year</label>
+                                        <select id="select_sort" class=" research-sort" onchange="handleSelectSort()">
+                                        <option value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;operator=OR&amp;synonyms=1&amp;q=energy">1950 - 2017</option>
+                                        </select>
+                                    </div>
+                            </div>
+                        
+                    </div>
+                    <!-- Search div ends here -->
                 
 
-                    <div id="chart-container" class="col-md-9 research-results" style="height:900px">
+                    <div id="chart-container" class="col-md-9 research-results" style="height:600px">
                     
 
                         
@@ -311,8 +341,26 @@
          
             
               
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+            <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+            <script src="js/vendor/jquery-1.12.4.min.js"></script>
+            <script src="js/popper.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/owl.carousel.min.js"></script>
+            <script src="js/isotope.pkgd.min.js"></script>
+            <script src="js/one-page-nav-min.js"></script>
+            <script src="js/slick.min.js"></script>
+            <script src="js/jquery.meanmenu.min.js"></script>
+            <script src="js/ajax-form.js"></script>
+            <script src="js/wow.min.js"></script>
+            <script src="js/jquery.scrollUp.min.js"></script>
+            <script src="js/jquery.barfiller.js"></script>
+            <script src="js/imagesloaded.pkgd.min.js"></script>
+            <script src="js/jquery.counterup.min.js"></script>
+            <script src="js/waypoints.min.js"></script>
+            <script src="js/jquery.magnific-popup.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
 
         
                     
