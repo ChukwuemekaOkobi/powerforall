@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+
+
+<head>
+    <meta charset="utf-8">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/highstock.js"></script>
+    <script src="/js/highmaps.js"></script>
+    <script src="/js/highcharts.js"></script>
+    <script src="/js/modules/stock.js"></script>
+    <script src="/js/modules/map.js"></script>
+    
+    <title>PEAK</title>
+</head>
+
+<body id="page-top">
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- Add your site or application content here -->
+     <!-- header-start -->
+     <header id="home" class="white-bg">
+        <div class="header-area header-sticky">
+            <!-- header-bottom -->
+            <div class="header-bottom-area header-sticky" style="transition: .6s;">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-6">
+                            <div class="logo">
+                                <a href="/home.html">
+                                    <img class="logo" src="img/PEAK.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-6 col-6">
+                  
+                            <div class="main-menu f-right">
+                                <nav id="mobile-menu" style="display: block;">
+                                    <ul >
+                                        <li class="pad">
+                                            <a href="research.html" >Research</a>
+                                          
+                                        </li>
+
+                                        <li>
+                                            <a href="data.html" >Data</a>
+                                          
+                                        </li>
+                                        <li>
+                                            <a href="regionsandcountries.html">Regions/countries</a>
+                                          
+                                        </li>                                
+                                    
+                                        <li>
+                                            <a href="events.html">Events</a>
+                                          
+                                        </li>
+                             
+                                          <li>
+                                            <a href="feedback.html" >Feedback</a>
+                                        </li>
+                                        <li>
+                                            <a href=""> About Us</a>
+                                            <ul class="submenu">
+                                                <li class="highlight">
+                                                    <a href="Info.html">Info</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="Contact.html">Contact</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="">Help</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="#">Team</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="#">Case Studies</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="#">Partners & Alies</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a class="donate" href="/">Donate</a>
+                                        </li>
+                                                                        
+                                        <li>
+                                            <a href="#resources"><i class="fa fa-user" aria-hidden="true"></i>
+                                               LOGIN/REGISTER</a>
+                                            <ul class="submenu">
+                                                <li class="highlight">
+                                                    <a href="login.html">Login</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="register.html">Register</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="#">Logout</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                       
+                             
+                                    </ul>
+                                    
+                                </nav>
+                            </div>
+                           
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /end header-bottom -->
+        </div>
+    </header>
+    <!-- header-end -->
+
+        <!-- Main area starts -->
+        <div id="wrapper" class="peak-area peak-bg-height gray-bg pt-25 pb-70">
+
+            <div class="container">
+                <h1>Data visualization</h1>
+                <div class="row white-bg">
+                
+
+                    <div id="chart-container" class="col-md-9 research-results" style="height:900px">
+                    
+
+                        
+                        
+                    </div>
+                    <div class="col-md-3" style="background-color:#dddee0; border-left:1px solid grey;">
+                                <div >
+                    <h4 class="primary-color"><br>Filter By</h4>
+                                    
+                                        
+                    <ul class="navbar-nav sidebar sidebar-dark " id="accordionSidebar">
+
+                
+
+                    <!-- Nav Item - Pages Collapse Menu -->
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="true" aria-controls="collapseTwo">
+                            <i class="fas fa-flag icon-cog blackiconcolor" style="color:grey"></i>
+                            <span style="color:black">Countries</span>
+                        </a>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                            <div class="bg-white py-2 collapse-inner rounded">
+                            
+                                <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Rwanda</a>
+                                <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Uganda</a>
+                                <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Nigeria</a>
+                                <a class="collapse-item" href="#"> All countries</a>
+                            </div>
+                        </div>
+                    </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-database" style="color:grey"></i>
+                     <span style="color:black">Datasets</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        
+                        <a class="collapse-item" href="#"><input type="checkbox"> &nbsp World bank data</a>
+                        <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Statistica</a>
+                        <a class="collapse-item" href="#"><input type="checkbox"> &nbsp WDD</a>
+                        <a class="collapse-item" href="#"> All datasets</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <!-- Divider -->
+            
+
+        </ul>
+                                
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- peak end -->
+          
+          
+        
+            <!-- brand start -->
+        
+            <!-- brand end -->
+
+            <!-- footer start -->
+            <footer id="contact">
+                <div class="footer-area white-bg pt-50">
+                    <div class="container">
+                        <div class="footer-top pb-35">
+                            <div class="row">
+                              
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="footer-widget mb-30">
+                                        <div class="footer-heading">
+                                            <h1>Follow us</h1>
+                                        </div>
+                                       
+                                        <div class="footer-contact-list">
+                                            
+                                            <div class="single-footer-contact-info">
+                                                <span class="ti-twitter "></span>
+                                                <span class="footer-contact-list-text"><a class="black-color"  href ='https://twitter.com/Power4All2025'>Power4All2025</a></span>
+                                            </div>
+                                            <div class="single-footer-contact-info">
+                                                <span class="ti-linkedin "></span>
+                                                
+                                                <span class="footer-contact-list-text"><a class="black-color"  href ='https://www.linkedin.com/company/power-for-all/'>Power for All</a></span>
+                                            </div>
+                                            <div class="single-footer-contact-info">
+                                                <span class="ti-facebook"></span>
+                                                <!--  -->
+                                                <span class="footer-contact-list-text"><a class="black-color"  href ='https://www.facebook.com/PWR4ALL/'>Power For All</a></span>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="footer-widget mb-30">
+                                        <div class="footer-heading">
+                                            <h1>About PEAK</h1>
+                                        </div>
+                                        <div class="footer-para">
+                                            <p align:justfy>PEAK translates dense energy access reports and datasets into searchable and categorized insights that are easy to share, enabling countless benefits to the environment and climate, to increased development finance, and to social impacts. </p>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-6">
+                                    <div class="footer-widget mb-30">
+                                        <div class="footer-heading">
+                                            <h1>Quick Links</h1>
+                                        </div>
+                                        <div class="footer-menu clearfix">
+                                            <ul>
+                                                <li><a href="#">Privacy Policy</a></li>
+                                                <li><a href="#">Condition</a></li>
+                                                <li><a href="#">Support</a></li>
+                                                <li><a href="#">Consultation</a></li>
+                                                <li><a href="#">Team Member</a></li>
+                                                <li><a href="#">Our Services</a></li>
+                                                <li><a href="#">About Us</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                                <li><a href="#">Who we are</a></li>
+                                                <li><a href="#">Get a Quote</a></li>
+                                                <li><a href="#">Recent Post</a></li>
+                                                <li><a href="#">Who we are</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                <div class="col-xl-3 col-lg-4  col-md-6">
+                                    <div class="footer-widget mb-30">
+                                        <div class="footer-heading">
+                                            <h1>Contact Us</h1>
+                                        </div>
+                                        <div class="footer-contact-list">
+                                            <div class="single-footer-contact-info">
+                                                <span class="ti-headphone "></span>
+                                                <span class="footer-contact-list-text">+003 (1234) 7894</span>
+                                            </div>
+                                            <div class="single-footer-contact-info">
+                                                <span class="ti-email "></span>
+                                                <span class="footer-contact-list-text">info@powerforall.org</span>
+                                            </div>
+                                            <div class="single-footer-contact-info">
+                                                <span class="ti-location-pin"></span>
+                                                <span class="footer-contact-list-text">123 New Street, 6th Floor, New York</span>
+                                            </div>
+                                        </div>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </footer>
+            <!-- footer end -->
+        
+        
+         
+            
+              
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        
+                    
+        </body>
+        
+          <!-- High charts scripts-->
+        <script> 
+
+                        document.addEventListener('DOMContentLoaded', function () {
+                        
+                        const chart = Highcharts.chart('chart-container', {
+                             chart: {
+                                         height: (9 / 16 * 100) + '%' // 16:9 ratio
+                                    },
+
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: '<b>Power consumption (Nigeria, Rwanda vs Uganda)</b>'
+                        },
+                        xAxis: {
+                            categories: ['2011', '2012', '2013']
+                        },
+                        yAxis: {
+                            title: {
+                                text: 'Power in kilowatts'
+                            }
+                        },
+                        series: [{
+                            name: 'Nigeria',
+                            data: [1, 20, 4]
+                        }, {
+                            name: 'Rwanda',
+                            data: [5, 7, 3]
+                        },
+                        {
+                            name: 'Uganda',
+                            data: [3, 9, 12]
+                        }]
+                        });
+                        });
+
+                </script>
+                
+        </html>
+        
