@@ -10,13 +10,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="/js/highcharts.js"></script>
-    <script src="/js/highstock.js"></script>
-    <script src="/js/highmaps.js"></script>
-    <script src="/js/highcharts.js"></script>
-    <script src="/js/modules/stock.js"></script>
-    <script src="/js/modules/map.js"></script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/europe.js"></script>
+    <script src="https://code.highcharts.com/mapdata/custom/africa.js"></script>
     
     <title>PEAK</title>
 </head>
@@ -128,7 +127,25 @@
         <div id="wrapper" class="peak-area peak-bg-height gray-bg pt-25 pb-70">
 
             <div class="container">
-                <h1>Data visualization</h1>
+                <div class="head">
+                                <div class="form-group has-search pt-3 pb-3">
+                                    <span class="fa fa-search form-control-feedback"></span>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                            
+                                <div class="clearfix mb-2">
+                                        <div class="float-left">
+                                            <ul class="nav nav-pills">
+                                                    <li role="presentation" class="nav-link active"><a href="datavisualization.html">Data Visualization</a></li>
+                                                    <li role="presentation" class="nav-link"><a href="geovisualization.html">Geo Visualization</a></li>
+                                            </ul>
+                                        
+                                        </div>
+                                </div>
+                    </div>
+                <a href="#" ><i class="fab  fa-linkedin"></i></a>
+                <a href="#" ><i class="fab fa-facebook-square"></i></a>
+                <a href="#" ><i class="fab  fa-twitter-square"></i></a>
                 <div class="row white-bg">
                     <div style="width:100%; background-color: gray">
                             <!-- Search div starts here -->
@@ -149,27 +166,37 @@
                                     
                                     </div>
                                     <div class="float-right" style="padding-right:30%">
-                                        <label class="sort-by mr-1" style="color:white">Chart type</label>
+                                        
                                         <select id="select_sort" class=" research-sort" onchange="handleSelectSort()">
-                                        <option value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;operator=OR&amp;synonyms=1&amp;q=energy">Bar</option>
-                                        <option selected="" value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;sort=newest&amp;operator=OR&amp;synonyms=1&amp;q=energy">Line</option>
-                                        <option value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;sort=oldest&amp;operator=OR&amp;synonyms=1&amp;q=energy">Column</option>
+                                        <option>chart type</option>
+                                        <option>Line</option>
+                                        <option>Column</option>
+                                        <option>Scatter</option>
                                         </select>
                                    
-                                        <label class="sort-by mr-1" style="color:white; ">Year</label>
+                                        
                                         <select id="select_sort" class=" research-sort" onchange="handleSelectSort()">
-                                        <option value="?zoom=years&amp;stemming=1&amp;s=1&amp;limit=25&amp;view=list&amp;operator=OR&amp;synonyms=1&amp;q=energy">1950 - 2017</option>
+                                        <option>From</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
+                                        </select>
+
+                                        <select id="select_sort" class=" research-sort" onchange="handleSelectSort()">
+                                        <option>To</option>
+                                        <option>2011</option>
+                                        <option>2012</option>
                                         </select>
                                     </div>
+
+                                   
                             </div>
                         
                     </div>
                     <!-- Search div ends here -->
-                
 
-                    <div id="chart-container" class="col-md-9 research-results" style="height:600px">
+                    <div id="chart-container" class="col-md-9 research-results" style="height:700px">
                     
-
+                      
                         
                         
                     </div>
@@ -366,10 +393,10 @@
                     
         </body>
         
-          <!-- High charts scripts-->
-        <script> 
-
-                        document.addEventListener('DOMContentLoaded', function () {
+         
+    <script>
+           
+ document.addEventListener('DOMContentLoaded', function () {
                         
                         const chart = Highcharts.chart('chart-container', {
                              chart: {
@@ -379,20 +406,26 @@
                         chart: {
                             type: 'column'
                         },
+                        
+                        
                         title: {
                             text: '<b>Power consumption (Nigeria, Rwanda vs Uganda)</b>'
                         },
                         xAxis: {
-                            categories: ['2011', '2012', '2013']
+                            
                         },
                         yAxis: {
+                           
                             title: {
                                 text: 'Power in kilowatts'
                             }
                         },
+                        
                         series: [{
                             name: 'Nigeria',
-                            data: [1, 20, 4]
+                            data: [1, 20, 4],
+                            
+                            
                         }, {
                             name: 'Rwanda',
                             data: [5, 7, 3]
@@ -404,7 +437,7 @@
                         });
                         });
 
-                </script>
+    </script>
                 
         </html>
         
