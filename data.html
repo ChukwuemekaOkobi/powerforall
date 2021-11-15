@@ -14,7 +14,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-   
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -22,17 +22,15 @@
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/meanmenu.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/default.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-     <!-- header-start -->
-     <header id="home" class="white-bg">
+    <header id="home" class="white-bg">
         <div class="header-area header-sticky">
             <!-- header-bottom -->
             <div class="header-bottom-area header-sticky" style="transition: .6s;">
@@ -52,12 +50,18 @@
                                     <ul >
                                         <li class="pad">
                                             <a href="research.html" >Research</a>
-                                          
                                         </li>
 
                                         <li>
-                                            <a href="data.html" >Data</a>
-                                          
+                                            <a href="" >Data</a>
+                                            <ul class="submenu">
+                                                <li class="highlight">
+                                                    <a href="data.html">Collection</a>
+                                                </li>
+                                                <li class="highlight">
+                                                    <a href="">My Docs and Data</a>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <a href="regionsandcountries.html">Regions/countries</a>
@@ -69,9 +73,9 @@
                                           
                                         </li>
                              
-                                          <li>
+                                          <!-- <li>
                                             <a href="feedback.html" >Feedback</a>
-                                        </li>
+                                        </li> -->
                                         <li>
                                             <a href=""> About Us</a>
                                             <ul class="submenu">
@@ -100,7 +104,7 @@
                                         </li>
                                                                         
                                         <li>
-                                            <a href="#resources"><i class="fa fa-user" aria-hidden="true"></i>
+                                            <a href="#"><i class="fa fa-user" aria-hidden="true"></i>
                                                LOGIN/REGISTER</a>
                                             <ul class="submenu">
                                                 <li class="highlight">
@@ -131,7 +135,6 @@
             <!-- /end header-bottom -->
         </div>
     </header>
-    <!-- header-end -->
 
         <!-- Main area starts -->
         <div id="peak" class="peak-area peak-bg-height gray-bg  pt-25 pb-70">
@@ -219,16 +222,19 @@
                         </div>
                         </div>
                     </div>
-                <div class="col-md-3" style="background-color:#F6F6F6 ; border-left:1px solid grey;">
+                <div class="col-md-3 filter">
                
-                <div >
-                        <h4 class="primary-color"><br>Filter By</h4>
-                            
+                <div class="pt-3" >
+                    <span id="dismiss" class="dismiss">
+                        <i class="fas fa-arrow-right"></i>
+                    </span> 
+                    <div class="primary-color pl-3 sidebar-header">
+                        <h4>Filter By</h4>
+                    </div>
                                 
-                        <ul class="navbar-nav sidebar sidebar-dark " id="accordionSidebar">
+                    <ul class="navbar-nav sidebar sidebar-dark " >
 
                     
-
                         <!-- Nav Item - Pages Collapse Menu -->
                         <li class="nav-item">
                             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"

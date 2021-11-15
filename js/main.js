@@ -310,8 +310,29 @@
         activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF'
     });
 
+
+    $('.dismiss').on('click', function () {
+        // hide sidebar
+        $('#filter').removeClass('active');
+    });
+
+
+    $('#filter-button').on('click',function () {
+
+        $('#filter').toggleClass('active');
+        
+    });
+
     // WOW active
     new WOW().init();
+
+
+    //filter side bar
+
+ 
+    
+
+    
 
 
 })(jQuery);
