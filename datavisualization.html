@@ -1,21 +1,38 @@
 <!doctype html>
-<html>
+<html class="no-js" lang="zxx">
    <head>
       <meta charset="utf-8">
-      <link rel="stylesheet" href="css/fontawesome-all.min.css">
-      <link href="css/sb-admin-2.min.css" rel="stylesheet">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>PEAK</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+      <!-- Place favicon.ico in the root directory -->
+      <!-- CSS here -->
       <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/magnific-popup.css">
+      <link rel="stylesheet" href="css/fontawesome-all.min.css">
+      <link rel="stylesheet" href="css/themify-icons.css">
+      <link rel="stylesheet" href="css/meanmenu.css">
+      <link rel="stylesheet" href="css/slick.css">
+      <link href="css/sb-admin-2.min.css" rel="stylesheet">
       <link rel="stylesheet" href="css/default.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
       <script src="https://code.highcharts.com/maps/highmaps.js"></script>
       <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
       <script src="https://code.highcharts.com/maps/modules/offline-exporting.js"></script>
       <script src="https://code.highcharts.com/maps/modules/data.js"></script>
       <script src="https://code.highcharts.com/mapdata/custom/europe.js"></script>
       <script src="https://code.highcharts.com/mapdata/custom/africa.js"></script>
-      <title>PEAK</title>
    </head>
-   <body id="page-top">
+   <body>
+      <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <![endif]-->
+      <!-- Add your site or application content here -->
       <header id="home" class="white-bg">
          <div class="header-area header-sticky">
             <!-- header-bottom -->
@@ -111,77 +128,72 @@
          </div>
       </header>
       <!-- Main area starts -->
-      <div id="wrapper" class="peak-area peak-bg-height gray-bg pt-25 pb-70">
+      <div id="peak" class="peak-area peak-bg-height gray-bg pt-25 pb-70">
          <div class="container">
-            <div class="head">
-               <div class="form-group has-search pt-3 pb-3">
-                  <span class="fa fa-search form-control-feedback"></span>
-                  <input type="text" class="form-control" placeholder="Search">
-               </div>
-               <div class="clearfix mb-2">
-                  <div class="float-left">
-                     <ul class="nav nav-pills">
-                        <li role="presentation" class="nav-link active"><a href="datavisualization.html">Data Visualization</a></li>
-                        <li role="presentation" class="nav-link"><a href="geovisualization.html">Geo Visualization</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-            <a href="#" ><i class="fab  fa-linkedin"></i></a>
-            <a href="#" ><i class="fab fa-facebook-square"></i></a>
-            <a href="#" ><i class="fab  fa-twitter-square"></i></a>
-            <div class="row white-bg">
-               <div style="width:100%; background-color: gray">
-                  <!-- Search div starts here -->
+            <h2 style="font-weight: bold;">Research </h2>
+            <div class="row wrapper">
+               <div class="col-md-9 pr-2">
                   <div class="head">
-                     <div class="form-group has-search pt-3 pb-3" style="padding-left:10%;padding-right:30%">
+                     <div class="form-group has-search pt-3 pb-3">
                         <span class="fa fa-search form-control-feedback"></span>
                         <input type="text" class="form-control" placeholder="Search">
                      </div>
-                  </div>
-                  <div class="clearfix mb-2">
-                     <div class="float-right" style="padding-right:30%">
-                        <select id="select_sort" class=" badge badge-pill badge-secondary" onchange="handleSelectSort()">
-                           <option>chart type</option>
-                           <option>Line</option>
-                           <option>Column</option>
-                           <option>Scatter</option>
-                        </select>
-                        <select id="select_sort" class="badge badge-pill badge-secondary" onchange="handleSelectSort()">
-                           <option>From</option>
-                           <option>2011</option>
-                           <option>2012</option>
-                        </select>
-                        <select id="select_sort" class=" badge badge-pill badge-secondary" onchange="handleSelectSort()">
-                           <option>To</option>
-                           <option>2011</option>
-                           <option>2012</option>
-                        </select>
-                        <button role="presentation" class="badge badge-pill badge-success">Save chart</button>
-                        <button role="presentation" class="badge badge-pill badge-warning">Clear chart</button>
+                     <div class="clearfix mb-4">
+                        <div class="float-left">
+                           <ul class="nav nav-pills">
+                              <li role="presentation" class="nav-link active"><a href="datavisualization.html">Data Visualization</a></li>
+                              <li role="presentation" class="nav-link"><a href="geovisualization.html">Geo Visualization</a></li>
+                           </ul>
+                           <div class="clearfix mb-2">
+                              <div class="float-right" style="padding-right:">
+                                 <hr class="search"/>
+                                 <select id="select_sort" class=" badge badge-pill badge-secondary" onchange="handleSelectSort()">
+                                    <option>chart type</option>
+                                    <option>Line</option>
+                                    <option>Column</option>
+                                    <option>Scatter</option>
+                                 </select>
+                                 <select id="select_sort" class="badge badge-pill badge-secondary" onchange="handleSelectSort()">
+                                    <option>From</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                 </select>
+                                 <select id="select_sort" class=" badge badge-pill badge-secondary" onchange="handleSelectSort()">
+                                    <option>To</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                 </select>
+                                 <span id="filter-button" class="text-white bg-secondary p-1 ml-2 pr-3 pl-3 filter-button badge badge-pill"> <i class="fas fa-filter"></i> Filter</span>
+                                 <button role="presentation" class="badge badge-pill badge-success">Save chart</button>
+                                 <button role="presentation" class="badge badge-pill badge-danger">Clear chart</button>
+                              </div>
+                           </div>
+                        </div>
                      </div>
+                     <hr class="search"/>
+                  </div>
+                  <div id="chart-container" class="research-results">
+                    
                   </div>
                </div>
-               <!-- Search div ends here -->
-               <div id="chart-container" class="col-md-9 research-results" style="height:700px">
-               </div>
-                <div class="col-md-3 filter">
-                  <div class="pt-3" >
-                     <span id="dismiss" class="dismiss">
-                     <i class="fas fa-arrow-right"></i>
-                     </span> 
-                     <div class="primary-color pl-3 sidebar-header">
-                        <h4>Filter By</h4>
-                     </div>
-                     <ul class="navbar-nav sidebar sidebar-dark " >
+               <div id="filter" class="col-md-3 filter filter-mobile">
+                  <nav class="pt-3">
+                  <span id="dismiss" class="dismiss">
+                  <i class="fas fa-arrow-right"></i>
+                  </span> 
+                  <div class="primary-color pl-3 sidebar-header">
+                     <h4>Filter By</h4>
+                  </div>
+                  <div class="">
+                     <ul class=" sidebar sidebar-dark ">
                         <!-- Nav Item - Pages Collapse Menu -->
-                        <li class="nav-item">
-                           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-                              aria-expanded="true" aria-controls="collapseTwo">
+                        <li class=" nav-item active">
+                           <a class="nav-link collapsed dropdown-toggle" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                              aria-expanded="false" aria-controls="collapseTwo">
                            <i class="fas fa-flag icon-cog blackiconcolor" style="color:grey"></i>
                            <span style="color:black">Countries</span>
                            </a>
-                           <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                           <div id="collapseTwo"  class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                               <div class="bg-white py-2 collapse-inner rounded">
                                  <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Rwanda</a>
                                  <a class="collapse-item" href="#"><input type="checkbox"> &nbsp Uganda</a>
@@ -192,8 +204,8 @@
                         </li>
                         <!-- Nav Item - Utilities Collapse Menu -->
                         <li class="nav-item">
-                           <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
-                              aria-expanded="true" aria-controls="collapseUtilities">
+                           <a class="nav-link collapsed dropdown-toggle" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                              aria-expanded="false" aria-controls="collapseUtilities">
                            <i class="fas fa-fw fa-database" style="color:grey"></i>
                            <span style="color:black">Datasets</span>
                            </a>
@@ -300,10 +312,15 @@
                      </div>
                   </div>
                </div>
+               <div class="footer-bottom pt-25 pb-25">
+                  <div class="container">
+                  </div>
+               </div>
             </div>
          </div>
       </footer>
       <!-- footer end -->
+      <!-- JS here -->
       <script src="js/vendor/modernizr-3.5.0.min.js"></script>
       <script src="js/vendor/jquery-1.12.4.min.js"></script>
       <script src="js/popper.min.js"></script>
