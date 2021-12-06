@@ -93,7 +93,7 @@
     }
 
     .courses-content-3 .courses-heading {
-        display: ;
+        display: block ;
         flex-wrap: wrap;
     }
 
@@ -723,7 +723,7 @@
     }
 
     .author-comments-avatar img {
-        text-align: ;
+        text-align:  center;
         padding-left: 40px;
         padding-bottom: 20px;
     }
@@ -1164,7 +1164,7 @@
     }
 
     .author-comments-avatar img {
-        text-align: ;
+        text-align: center;
         padding-left: 40px;
         padding-bottom: 20px;
     }
