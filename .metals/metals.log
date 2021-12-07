@@ -17,3 +17,4 @@
 [0m2021.12.05 13:32:30 INFO  time: initialize in 0.89s[0m
 [0m2021.12.05 13:32:31 WARN  Build server is not auto-connectable.[0m
 [0m2021.12.05 13:32:31 WARN  no build tool detected in workspace 'C:\Users\Okobi\Documents\practicum\Power4All\Power4All'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+[0m2021.12.06 12:01:07 INFO  shutting down Metals[0m
